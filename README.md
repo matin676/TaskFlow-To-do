@@ -1,23 +1,33 @@
-# ⚡ TaskFlow - Modern Todo App
+# ⚡ TaskFlow Pro
 
-A premium, high-performance task management application built with React, Redux Toolkit, and Tailwind CSS.
+A premium, high-performance task management application for the modern web. Built with React, Redux Toolkit, and "Pro Max" UI Design.
 
 ## 🚀 Features
 
-- **Smart Persistence**: Data is saved to LocalStorage with Zod schema validation to prevent corruption.
-- **Feature-Sliced Architecture**: Modular, scalable codebase structure.
-- **High Performance**: Normalized Redux state (O(1) lookups) and memoized selectors.
-- **Premium UX**: Smooth Framer Motion animations and a responsive design system.
-- **Advanced Features**:
-  - Inline Editing (Double-click to edit)
-  - Task Filtering (All / Active / Completed)
-  - Progress Analytics
+### Productivity Pro
+
+- **Deep Task Management**: Break down tasks into **Subtasks** with progress tracking.
+- **Organization**: Assign **Priorities** (High/Medium/Low) and custom **Tags**.
+- **Smart Persistence**: Data saved to LocalStorage with robust Zod validation.
+
+### Pro Max UI/UX
+
+- **Modern Aesthetic**: Clean **Violet & Slate** theme with glassmorphic details.
+- **Focused Layout**: Centered, distraction-free interface optimized for readability.
+- **Micro-interactions**: Smooth Framer Motion animations for every action.
+- **Mobile Optimized**: Fully responsive design with touch-friendly targets and adaptive layouts.
+
+### Advanced Capabilities
+
+- **Feature-Sliced Architecture**: Modular and scalable codebase.
+- **High Performance**: Normalized Redux state for instant updates.
+- **Inline Editing**: Double-click any task to edit instantly.
 
 ## 🛠️ Tech Stack
 
 - **Core**: React 18, Vite
 - **State**: Redux Toolkit (EntityAdapter + Custom Thunks)
-- **Styling**: Tailwind CSS, clsx, tailwind-merge
+- **Styling**: Tailwind CSS (Custom HSL Theme), clsx, tailwind-merge
 - **Icons**: Lucide React
 - **Validation**: Zod
 - **Animation**: Framer Motion
@@ -38,25 +48,22 @@ A premium, high-performance task management application built with React, Redux 
    ```
 
 3. Start the dev server:
-
    ```bash
    npm run dev
    ```
 
 ## 🏗️ Deployment
 
-This project is deployed on **GitHub Pages**.
-
-[**🔴 Live Demo**](https://matin676.github.io/TaskFlow-To-do/)
+This project is ready for deployment on **GitHub Pages**, **Vercel**, or **Netlify**.
 
 ### Deploying Updates
 
-1. Make changes and commit them.
-
-2. Run the deploy script:
-
+1. Build the project:
    ```bash
-   npm run deploy
+   npm run build
    ```
+2. Deploy the `dist` folder to your host.
 
-   This command will build the project and push the `dist` folder to the `gh-pages` branch.
+---
+
+_Focus on what matters most._
