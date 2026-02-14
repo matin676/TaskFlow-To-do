@@ -1,6 +1,6 @@
-import { MainLayout } from "./components/layout/MainLayout";
-import { AddTodoForm } from "./features/todos/AddTodoForm";
-import { TodoList } from "./features/todos/TodoList";
+import { MainLayout } from "./shared/layouts/MainLayout";
+import { AddTodoForm } from "./features/todo/ui/AddTodoForm";
+import { TodoList } from "./features/todo/ui/TodoList";
 import { CheckSquare } from "lucide-react";
 
 function App() {
@@ -28,9 +28,6 @@ function App() {
             <div className="flex items-center justify-between mb-4 px-2">
               <h2 className="text-lg font-semibold text-foreground/80 flex items-center gap-2">
                 Your Tasks
-                <span className="text-xs font-medium bg-muted text-muted-foreground px-2 py-0.5 rounded-full">
-                  Active
-                </span>
               </h2>
             </div>
             <TodoList />

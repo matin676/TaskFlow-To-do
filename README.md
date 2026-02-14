@@ -1,68 +1,90 @@
 # ⚡ TaskFlow Pro
 
-A premium, high-performance task management application for the modern web. Built with React, Redux Toolkit, and "Pro Max" UI Design.
+A premium, high-performance task management application for the modern web. Redesigned with a **Zen Minimalist** aesthetic and a robust **Feature-Sliced Architecture**.
 
-## 🚀 Features
+![Zen Minimalist](https://img.shields.io/badge/Design-Zen%20Minimalist-4f46e5)
+![FSD Architecture](https://img.shields.io/badge/Architecture-Feature--Sliced-green)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-success)
 
-### Productivity Pro
+## 🚀 Key Features
 
-- **Deep Task Management**: Break down tasks into **Subtasks** with progress tracking.
-- **Organization**: Assign **Priorities** (High/Medium/Low) and custom **Tags**.
-- **Smart Persistence**: Data saved to LocalStorage with robust Zod validation.
+### ✨ Zen Minimalist UI
 
-### Pro Max UI/UX
+- **Glassmorphism Layout:** A centered, distraction-free interface with subtle background gradients and blur effects.
+- **Animations:** Powered by **Framer Motion** for smooth list transitions, hover effects, and micro-interactions.
+- **Zinc + Indigo Theme:** A professional, monochrome base (Zinc neutral grays) with Indigo accents for focus.
 
-- **Modern Aesthetic**: Clean **Violet & Slate** theme with glassmorphic details.
-- **Focused Layout**: Centered, distraction-free interface optimized for readability.
-- **Micro-interactions**: Smooth Framer Motion animations for every action.
-- **Mobile Optimized**: Fully responsive design with touch-friendly targets and adaptive layouts.
+### 🛠️ Pro Architecture
 
-### Advanced Capabilities
+- **Async Redux Thunks:** Data operations are handled asynchronously, keeping the UI responsive (Optimistic Updates).
+- **Zod Validation:** All data entering the application is strictly validated against schemas.
+- **Feature-Sliced Design (Lite):**
+  - `src/app/`: Global configuration (Store, Styles).
+  - `src/features/`: Domain logic (e.g., `todo`).
+  - `src/shared/`: Reusable UI components and utilities.
 
-- **Feature-Sliced Architecture**: Modular and scalable codebase.
-- **High Performance**: Normalized Redux state for instant updates.
-- **Inline Editing**: Double-click any task to edit instantly.
+### ⚡ Productivity Tools
+
+- **Subtasks:** Break down complex tasks into manageable sub-steps.
+- **Tags & Filtering:** Organize with custom tags and filter by Active/Completed status.
+- **Smart Persistence:** Auto-saves to LocalStorage with robust error handling.
 
 ## 🛠️ Tech Stack
 
-- **Core**: React 18, Vite
-- **State**: Redux Toolkit (EntityAdapter + Custom Thunks)
-- **Styling**: Tailwind CSS (Custom HSL Theme), clsx, tailwind-merge
-- **Icons**: Lucide React
-- **Validation**: Zod
-- **Animation**: Framer Motion
+- **Frontend:** React 18, Vite
+- **State:** Redux Toolkit (EntityAdapter, createAsyncThunk)
+- **Styling:** Tailwind CSS, PostCSS
+- **Motion:** Framer Motion
+- **Icons:** Lucide React
+- **Validation:** Zod
+- **Utils:** clsx, tailwind-merge
 
 ## 📦 Installation
 
-1. Clone the repository
+1.  **Clone the repository**
 
-   ```bash
-   git clone https://github.com/matin676/TaskFlow-To-do.git
-   cd TaskFlow-To-do
-   ```
+    ```bash
+    git clone https://github.com/matin676/TaskFlow-To-do.git
+    cd TaskFlow-To-do
+    ```
 
-2. Install dependencies:
+2.  **Install dependencies**
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
-3. Start the dev server:
-   ```bash
-   npm run dev
-   ```
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
 
-## 🏗️ Deployment
+## 🏗️ Project Structure
 
-This project is ready for deployment on **GitHub Pages**, **Vercel**, or **Netlify**.
+```bash
+src/
+├── app/                  # Global app setup
+│   ├── store.js          # Redux store configuration
+│   └── styles/           # Global CSS (Theme variables)
+├── features/             # Feature-based modules
+│   └── todo/
+│       ├── api/          # Async Service Layer (Zod + LocalStorage)
+│       ├── model/        # Redux Slices & Thunks
+│       └── ui/           # Feature-specific components (TodoList, Item, Forms)
+├── shared/               # Reusable code
+│   ├── layouts/          # Page layouts (MainLayout)
+│   ├── lib/              # Utilities (cn.js)
+│   └── ui/               # Atomic components (Button, Input)
+└── main.jsx              # Entry point
+```
 
-### Deploying Updates
+## 🧪 Verification
 
-1. Build the project:
-   ```bash
-   npm run build
-   ```
-2. Deploy the `dist` folder to your host.
+This project maintains code quality through ESLint.
+
+```bash
+npm run lint
+```
 
 ---
 
